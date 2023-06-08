@@ -1,0 +1,134 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: linear-gradient(238.79deg, #b0a799 1.03%, #988580 71.28%);
+}
+header {
+    padding-top:2em;
+    padding-bottom: 5em;
+  }
+a {
+    font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 200%;
+  /* line-height: 37px; */
+  /* identical to box height */
+  
+  text-align: justify;
+  text-transform: uppercase;
+  
+  color: #FFFFFF;
+  }
+  #gamepad {
+    position:absolute;
+    width: 50vw;
+    height: 35vh;
+    left: 40vw;
+    top: 5vh;
+  }
+  #laptop {
+    position:absolute;
+    /* transform: rotate(-23.87deg); */
+    left: -1vw;
+    top: 35vh;
+  }
+  
+  #ball1 {
+    position:absolute;
+    /* transform: rotate(57.51deg); */
+    /* width: 806.11px;
+    height: 646.09px; */
+    left: 76vw;
+    top: -10vh;
+  }
+  #ball2 {
+    position:absolute;
+    top:43vh;
+    left:20vw;
+  }
+  #ball3 {
+    position: absolute;
+    top: 35vh;
+    left: 75vw;
+  }
+  #ball4 {
+    position: absolute;
+    top:20vh;
+    left:30vw;
+  }
+  #ball5 {
+      position:absolute;
+      left:0vw;
+      top:-10vh;
+  }
+  #ball6 {
+      position: absolute;
+      left: 25vw;
+      top: 40vh;
+  }
+  .background {
+    backdrop-filter: blur(15px);
+    height: 100%;
+    filter: blur(15px);
+    background: linear-gradient(254.06deg, rgba(199, 199, 199, 0.09) 2.52%, rgba(121, 121, 121, 0.16) 100%);
+  }
+  .navigation {
+    position: absolute;
+    display:flex;
+    gap:2%;
+    width:100%;
+    top:20%;
+    left: 18%;
+  }
+  .nav-masthead .nav-link {
+    color: rgb(255, 255, 255);
+    border-bottom: .25rem solid transparent;
+  }
+  
+  .nav-masthead .nav-link:hover,
+  .nav-masthead .nav-link:focus {
+    border-bottom-color: rgb(253, 184, 158);
+  }
+  
+  .btn {
+      border-color: #fdb89e;
+      color: #fff;
+      background-image: -webkit-linear-gradient(45deg, #fdb89e 50%, transparent 50%);
+      background-image: linear-gradient(45deg, #fdb89e 50%, transparent 50%);
+      background-position: 100%;
+      background-size: 400%;
+      -webkit-transition: background 300ms ease-in-out;
+      transition: background 300ms ease-in-out;
+  }
+  
+  .btn:hover{
+      background-position: 0;
+  }
+  
+  .nav-masthead .nav-link + .nav-link {
+    margin-left: 1rem;
+  }
+  
+  .nav-masthead .active {
+    color: rgb(253, 184, 158);
+    border-bottom-color: rgb(253, 184, 158);
+  }
+
+  #project-list {
+    position:absolute;
+    display: flex;
+    top:45%;
+    padding-left: 10%;
+    /* padding-right:13.5%; */
+    width: 90%;
+    height:25%;
+    /* gap:10%; */
+    justify-content: space-between;
+  }

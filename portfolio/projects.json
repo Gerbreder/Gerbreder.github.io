@@ -1,0 +1,31 @@
+{
+    "projects": [
+        {
+            "id": "0",
+            "photo": "biolar.png",
+            "name": "A/S Biolar internet shop",
+            "description": "Setup, modification and administration of website on CMS Opencart base.",
+            "link": "Website",
+            "url": "shop.biolarpaint.lv",
+            "dates": "17.05.2020-31.03.2022"
+        },
+        {
+            "id": "1",
+            "photo": "payment_sys.png",
+            "name": "Payment system",
+            "description": "I worked on the Backend part of the project using microservices, Spring and AWS.",
+            "link": "GITHUB",
+            "url": "https://github.com/Saa1amand3r/Payment_System",
+            "dates":"25.08.2020-25.09.2020"
+        },
+        {
+            "id": "2",
+            "photo": "scandiweb.png",
+            "name": "Scandiweb test for Developer position",
+            "description": "This is a small web app with two pages written in PHP, HTML and JS.",
+            "link": "GITHUB",
+            "url": "https://github.com/Saa1amand3r/ScandiWeb_webDeveloper",
+            "dates": "19.05.2022–22.06.2022"
+        }
+    ]
+}
