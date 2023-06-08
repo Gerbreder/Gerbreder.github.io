@@ -135,9 +135,9 @@ color: #FFFFFF;
 
   @media screen and (min-width: 1000px){
     #photo {
-      position: relative;
-      top:-12vh;
-      left:-5vw;
+      position: absolute;
+      top:-12.5vh;
+      left:41vw;
       width: 60.25vw;
       /* height: 30vh; */
     }
