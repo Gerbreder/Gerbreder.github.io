@@ -203,6 +203,9 @@ a {
 
     color: #FFFFFF;
   }
+  .project-link:hover {
+    color: rgb(253, 184, 158);
+  }
   .project-dates {
     font-family: 'Montserrat';
     font-style: normal;
