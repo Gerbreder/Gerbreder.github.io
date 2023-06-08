@@ -128,7 +128,7 @@ color: #FFFFFF;
   }
     #photo {
       position: absolute;
-      top:-17vh;
+      top:-12.5vh;
       left:41vw;
       width: 60.25vw;
       /* height: 30vh; */
@@ -154,7 +154,7 @@ color: #FFFFFF;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 65vw;
-    height: 60vh;
+    height: 65vh;
     display: flex;
     flex-direction: column; /* Add flex-direction column to stack elements vertically */
   }
