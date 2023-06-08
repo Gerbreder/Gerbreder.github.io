@@ -142,6 +142,18 @@ color: #FFFFFF;
       /* height: 30vh; */
     }
   }
+  @media screen and (height:1440px) and (width:2560px) {
+    #photo {
+      position: absolute;
+      top:6vh;
+      left:41vw;
+      width: 60.25vw;
+      /* height: 30vh; */
+    }
+    .information {
+      margin-top: 10vh;
+    }
+  }
     
     
     .content-container {
