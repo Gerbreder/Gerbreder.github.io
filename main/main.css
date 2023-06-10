@@ -136,7 +136,7 @@ color: #FFFFFF;
     }
   }
 
-  @media screen and (min-width: 1000px){
+  @media screen and (min-width: 1000px) and (max-width:1440px){
     #photo {
       position: absolute;
       top:-14%;
@@ -144,15 +144,21 @@ color: #FFFFFF;
       width: 60.25vw;
     }
   }
-  @media (aspect-ratio: 16/9) and (min-width:1440px) {
+  @media (min-width:1440px){
     #photo{
       position: absolute;
-      top:12%;
-      left:90%;
+      top:13%;
+      left:55%;
       width: 70vw;
     }
     .lead {
-      
+      /* margin-top: 40%; */
+    }
+    p {
+      font-size: 180%;
+    }
+    h1 {
+      font-size: 280%;
     }
   }
   /* @media screen and (height:1440px) and (width:2560px) {
