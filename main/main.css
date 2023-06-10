@@ -142,7 +142,17 @@ color: #FFFFFF;
       top:-14%;
       left:63%;
       width: 60.25vw;
-      /* height: 30vh; */
+    }
+  }
+  @media (aspect-ratio: 16/9) and (min-width:1440px) {
+    #photo{
+      position: absolute;
+      top:12%;
+      left:90%;
+      width: 70vw;
+    }
+    .lead {
+      
     }
   }
   /* @media screen and (height:1440px) and (width:2560px) {
