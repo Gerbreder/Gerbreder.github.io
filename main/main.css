@@ -25,17 +25,20 @@ font-weight: 700;
 font-size: 250%;
 line-height: 78px;
 /* identical to box height */
-margin-bottom: 1em;
+margin-bottom: 0.3em;
 
 text-align: justify;
 
 color: #FFFFFF;
 }
+.lead {
+  margin-top: 1em;
+}
 p {
   font-family: 'Montserrat';
 font-style: normal;
 font-weight: 500;
-font-size: 130%;
+font-size: 115%;
 /* line-height: 59px; */
 text-align: justify;
 
@@ -136,24 +139,24 @@ color: #FFFFFF;
   @media screen and (min-width: 1000px){
     #photo {
       position: absolute;
-      top:-12.5vh;
-      left:41vw;
+      top:-14%;
+      left:63%;
       width: 60.25vw;
       /* height: 30vh; */
     }
   }
-  @media screen and (height:1440px) and (width:2560px) {
+  /* @media screen and (height:1440px) and (width:2560px) {
     #photo {
       position: absolute;
       top:6vh;
       left:41vw;
       width: 60.25vw;
       /* height: 30vh; */
-    }
-    .information {
+    
+    /* .information {
       margin-top: 10vh;
     }
-  }
+  } */ 
     
     footer {
       font-family: 'Montserrat';
@@ -203,7 +206,6 @@ color: #FFFFFF;
     max-width: 65%;
     max-height: 100%;
   }  
-
 
 
 
