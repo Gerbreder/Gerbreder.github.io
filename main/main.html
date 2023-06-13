@@ -13,11 +13,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="main.css">
     <link rel="icon" href="../favicon.svg">
 </head>
 <body>
-    <div class="about-me">
         <div class="background">
             <svg id="laptop" width="30%" height="50%" viewBox="0 0 873 840" fill="none" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink">
                 <rect x="-84" y="321.707" width="795" height="566" transform="rotate(-23.87 -84 321.707)" fill="url(#pattern2)"/>
@@ -96,8 +96,101 @@
                     
     
         </div>
-        <div class="blurred-rectangle"></div>
-        <div class="blurred-rectangle-content">
+
+        <div class="blurred-rectangle">
+            <div class="left-side">
+                <div class="navigation-bar">
+                    <div class="logo">
+                        <a href="main.html">
+                            <svg id="logo" width="67" height="90" top="196" viewBox="0 0 150 193" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M20.8158 112.321L24.7267 121.523L30.0252 153.165L62.069 173.839L102.061 146.609L121.362 97.4455L115.181 96.437L108.747 101.858L95.1219 106.018L82.6325 107.53L79.9832 77.0235L63.2044 58.7446L58.2843 56.7276L61.1859 86.3521L37.8469 113.329L20.8158 112.321ZM43.524 151.778L37.8469 128.961L63.2044 150.139L43.524 151.778ZM92.9773 124.044L71.5307 148.5L93.9865 143.71L92.9773 124.044Z" fill="#292A2B"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.32632 97.4455L20.8158 158.207L61.4382 187.201L115.181 148.5L138.898 86.3521L126.787 75.7629L119.849 77.0235L121.362 84.9654L98.2759 94.6721L92.9773 86.3521V70.4683L53.6165 31.7675V21.8086L43.524 36.6839L50.2103 77.0235L33.4315 100.471L8.32632 97.4455ZM24.7267 154.677L15.3911 102.362L34.5669 106.522L37.8469 104.127L56.6442 77.0235L53.6165 42.1045L86.1648 70.4683L88.3095 100.471L92.0942 104.127L122.75 89.7557H128.932L126.787 106.018L109.378 145.853L64.2136 178.755L24.7267 154.677Z" fill="#292A2B"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.3911 102.362L24.7267 154.677L64.2136 178.755L109.378 145.853L126.787 106.018L128.932 89.7557H122.75L92.0942 104.127L88.3095 100.471L86.1648 70.4683L53.6165 42.1045L56.6442 77.0235L37.8469 104.127L34.5669 106.522L15.3911 102.362ZM24.7267 121.523L20.8158 112.321L37.8469 113.329L61.1859 86.3521L58.2843 56.7276L63.2044 58.7446L79.9832 77.0235L82.6325 107.53L95.1219 106.018L108.747 101.858L115.181 96.437L121.362 97.4455L102.061 146.609L62.069 173.839L30.0252 153.165L24.7267 121.523Z" fill="#F76735"/>
+                                <path d="M37.8469 128.961L43.524 151.778L63.2044 150.139L37.8469 128.961Z" fill="#F76735"/>
+                                <path d="M71.5307 148.5L92.9773 124.044L93.9865 143.71L71.5307 148.5Z" fill="#F76735"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="nav-buttons">
+                        <nav class="nav nav-masthead">
+                            <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="main.html">Home</a>
+                            <a class="nav-link fw-bold py-1 px-0" href="../portfolio/portfolio.html">Portfolio</a>
+                            <a class="nav-link fw-bold py-1 px-0" href="../contacts/contacts.html">Contact Me</a>
+                        </nav>
+                    </div>
+                    <nav class="mobile-nav">
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </nav>
+
+                </div>
+                <div class="mobile-topnav">
+                    <div id="myLinks">
+                        <nav class="nav nav-masthead" style="display: flex;
+                        flex-direction: column;">
+                            <a class="nav-link active" aria-current="page" href="main.html">Home</a>
+                            <a class="nav-link" href="../portfolio/portfolio.html">Portfolio</a>
+                            <a class="nav-link" href="../contacts/contacts.html">Contact Me</a>
+                        </nav>
+                    </div>
+                    
+                  </div>
+                <div class="content">
+                    <div class="information">
+                        <h1 id="title">
+                            Hi, I'm Erik Gerbreder!
+                        </h1>
+                        <p id="text-about-me">
+                            I am a young and ambitious web developer with experience in PHP, Java, HTML, CSS, JavaScript and OpenCart. I am reliable and have a strong desire to constantly learn and grow. If you are looking for a dedicated and skilled programmer who is eager to take on new challenges, I would be a perfect fit. Let's connect and build something remarkable together!
+                        </p>
+                        <p class="lead">
+                            <a href="../portfolio/portfolio.html">
+                            <button class="blob-btn">
+                            Portfolio
+                            <span class="blob-btn__inner">
+                                <span class="blob-btn__blobs">
+                                <span class="blob-btn__blob"></span>
+                                <span class="blob-btn__blob"></span>
+                                <span class="blob-btn__blob"></span>
+                                <span class="blob-btn__blob"></span>
+                                </span>
+                            </span>
+                            </button>
+                            <br/>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                    <defs>
+                                    <filter id="goo">
+                                        <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+                                        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo"></feColorMatrix>
+                                        <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+                                    </filter>
+                                    </defs>
+                                </svg>
+                            </a>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="photo">
+                </div>
+            </div>
+        </div>
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myLinks");
+              if (x.style.display === "block") {
+                x.style.display = "none";
+              } else {
+                x.style.display = "block";
+              }
+            }
+            </script>
+
+        <!-- <div class="blurred-rectangle-content">
             <svg id="photo" width="1000" height="800" viewBox="0 100 2000 1000" fill="none" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink">
                 <rect width="916" height="1300" fill="url(#pattern0)"/>
                 <defs>
@@ -133,33 +226,7 @@
                         <div class="information">
                             <h1>Hi, I'm Erik Gerbreder!</h1>
                             <p>I am a young and ambitious web developer with experience in PHP, Java, HTML, CSS, JavaScript and OpenCart. I am reliable and have a strong desire to constantly learn and grow. If you are looking for a dedicated and skilled programmer who is eager to take on new challenges, I would be a perfect fit. Let's connect and build something remarkable together!</p>
-                            <p class="lead">
-                                <a href="../portfolio/portfolio.html">
-                                <button class="blob-btn">
-                                Portfolio
-                                <span class="blob-btn__inner">
-                                    <span class="blob-btn__blobs">
-                                    <span class="blob-btn__blob"></span>
-                                    <span class="blob-btn__blob"></span>
-                                    <span class="blob-btn__blob"></span>
-                                    <span class="blob-btn__blob"></span>
-                                    </span>
-                                </span>
-                                </button>
-                                <br/>
-
-                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-                                        <defs>
-                                        <filter id="goo">
-                                            <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
-                                            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo"></feColorMatrix>
-                                            <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
-                                        </filter>
-                                        </defs>
-                                    </svg>
-                                </a>
-
-                            </p>
+                            
                         </div>
                     </div>
                     <div class="column">
@@ -167,8 +234,7 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </div> -->
     <footer>
         The amazing design by Arina Sharpilo. Her email: arina.sarpilo@gmail.com.
     </footer>
