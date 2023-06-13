@@ -9,6 +9,28 @@ body {
   background-size: cover;
   background: linear-gradient(238.79deg, #b0a799 1.03%, #988580 71.28%);
 }
+@media (min-width:320px) and (max-width:1413px) {
+  #project-list {
+    position: absolute;
+    display: flex;
+    top:25%;
+    padding-left: 10%;
+    /* padding-right:13.5%; */
+    width: 90%;
+    height: 65vh;
+    /* gap:10%; */
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    overflow-y: auto;
+    overflow-x: hidden;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  .project {
+    width: 100%;
+  }
+}
 header {
     padding-top:2em;
     padding-bottom: 5em;
@@ -141,22 +163,25 @@ a {
     color: rgb(253, 184, 158);
     border-bottom-color: rgb(253, 184, 158);
   }
+  
+  @media (min-width:1413px) {
+    #project-list {
+      position:absolute;
+      display: flex;
+      top:25%;
 
-  #project-list {
-    position:absolute;
-    display: flex;
-    top:25%;
-
-    padding-left: 10%;
-    /* padding-right:13.5%; */
-    width: 90%;
-    height: 65vh;
-    /* gap:10%; */
-    justify-content: space-between;
-    flex-wrap: wrap;
-    overflow-y: auto;
-    overflow-x: hidden;
+      padding-left: 10%;
+      /* padding-right:13.5%; */
+      width: 90%;
+      height: 65vh;
+      /* gap:10%; */
+      justify-content: space-between;
+      flex-wrap: wrap;
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
   }
+  
 
   #project-list::-webkit-scrollbar {
     width: 12px;
