@@ -10,11 +10,25 @@ body {
   background: linear-gradient(238.79deg, #b0a799 1.03%, #988580 71.28%);
 }
 .left-side {
+  position: relative;
   display: flex;
+  z-index: 9999;
   flex-direction: column;
+}
+.right-side {
+  z-index: 9999;
 }
 .blurred-rectangle {
   backdrop-filter: blur(15px);
+  /* filter: blur(15px); */
+}
+.blurred-rectangle::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 .navigation-bar {
   display: flex;
@@ -185,6 +199,7 @@ body {
   }
   .background {
     backdrop-filter: blur(15px);
+    filter: blur(15px);
   }
   /* #gamepad, #laptop, #ball1, #ball2, #ball3, #ball4, #ball5, #ball6 {
     display: none;
