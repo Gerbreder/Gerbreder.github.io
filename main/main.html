@@ -144,9 +144,9 @@
                         <p id="text-about-me">
                             I am a young and ambitious web developer with experience in PHP, Java, HTML, CSS, JavaScript and OpenCart. I am reliable and have a strong desire to constantly learn and grow. If you are looking for a dedicated and skilled programmer who is eager to take on new challenges, I would be a perfect fit. Let's connect and build something remarkable together!
                         </p>
+                        
                         <p class="lead">
-                            <a href="../portfolio/portfolio.html">
-                            <button class="blob-btn">
+                            <button class="blob-btn" onclick="toPortfolio()">
                             Portfolio
                             <span class="blob-btn__inner">
                                 <span class="blob-btn__blobs">
@@ -180,6 +180,9 @@
             </div>
         </div>
         <script>
+            function toPortfolio() {
+                window.location.href = "https://gerbreder.github.io/portfolio/portfolio.html";
+            }
             function myFunction() {
               var x = document.getElementById("myLinks");
               if (x.style.display === "block") {

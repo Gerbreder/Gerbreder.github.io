@@ -9,6 +9,7 @@ body {
   background-size: cover;
   background: linear-gradient(238.79deg, #b0a799 1.03%, #988580 71.28%);
 }
+
 .left-side {
   position: relative;
   display: flex;
