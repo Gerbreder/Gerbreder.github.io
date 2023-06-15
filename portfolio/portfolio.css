@@ -34,19 +34,7 @@ footer {
     width: 100%;
     padding-right: 10px;
 }
-a {
-  font-family: 'Montserrat';
-font-style: normal;
-font-weight: 700;
-font-size: 200%;
-/* line-height: 37px; */
-/* identical to box height */
 
-text-align: justify;
-text-transform: uppercase;
-
-color: #FFFFFF;
-}
 #gamepad {
   position:absolute;
   width: 50vw;
@@ -101,12 +89,12 @@ color: #FFFFFF;
   background: linear-gradient(254.06deg, rgba(199, 199, 199, 0.09) 2.52%, rgba(121, 121, 121, 0.16) 100%);
 }
 .navigation {
-  /* position: relative; */
+  position: relative;
   display:flex;
   gap:2%;
   width:100%;
-  top:5%;
-  left: 18%;
+  top:1.5%;
+  left: 17%;
 }
 .nav-masthead .nav-link {
   color: rgb(255, 255, 255);
@@ -235,10 +223,11 @@ hr {
   margin-left: 2vw;
   margin-right: 2vw;
 }
-.container {
+.container-portfolio {
   display: flex;
   flex-direction: column;
   position: absolute;
+  /* box-sizing: border-box; */
   padding: 2em;
   top:0;
   left:0;
@@ -246,17 +235,107 @@ hr {
   height: 100%;
 }
 
+
 @media (min-width:320px) and (max-width:1413px) {
-  #project-list {
-    /* position: relative; */
+  body {
+    overflow-x: hidden;
+    overflow-y: auto !important;
+  }
+  .container-portfolio {
+    display: block;
+    gap:2em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding: 2em;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  .navigation-buttons {
+    display: none;
+  }
+  .mobile-nav {
+    /* display:flex; */
+    flex-direction: column;
+    float:right;
+    width: 100%;
+  }
+  .mobile-nav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 30px;
     display: flex;
-    top:25%;
-    padding-left: 10%;
+    flex-direction: column;
+    float:right;
+  }
+  .mobile-nav a.icon {
+    background: rgba(255, 255, 255, 0);
+    color: white;
+  }
+  /* Стиль меню навигации */
+.mobile-topnav {
+  margin-bottom: 2em;
+  overflow: hidden;
+  /* flex:1; */
+  background-color: #ffffff3f;
+  /* position: relative; */
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+/* Скрыть ссылки внутри меню навигации ( кроме главной/логотип) */
+.mobile-topnav #myLinks {
+  display: none;
+}
+
+/* Ссылки меню навигации по стилю */
+.mobile-topnav a {
+  position: relative;
+  /* left:50%; */
+  padding: 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+footer {
+  display: none;
+}
+.navigation {
+  position: relative;
+  left:0;
+  top:0;
+  align-items: center;
+  margin-bottom: 2em;
+}
+
+.nav-link {
+  text-align: center;
+  margin-left:0em;
+
+}
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 0rem;
+  height: inherit;
+}
+.project-image {
+  width:76vw;
+
+}
+  #project-list {
+    position: relative;
+
+    display: block;
+    /* top:25%; */
+    /* padding-left: 10%; */
     /* padding-right:13.5%; */
-    width: 90%;
-    height: 65vh;
+    /* width: 90%; */
+    /* height: 65vh; */
     /* gap:10%; */
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: nowrap;
     overflow-y: auto;
     overflow-x: hidden;
@@ -266,21 +345,49 @@ hr {
   }
   .project {
     width: 100%;
+    flex: 1;
+    height: fit-content;
+    box-shadow: none;
+    overflow-y: auto;
+    overflow-x: hidden;
+    align-items: center;
+    display: block;
+    flex-direction: column;
   }
+
 }
   
   @media (min-width:1413px) {
-    #project-list {
-      /* position:absolute; */
-      display: flex;
-      top:25%;
+  a {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 200%;
+    /* line-height: 37px; */
+    /* identical to box height */
 
-      padding-left: 10%;
+    text-align: justify;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+  }
+  .mobile-nav {
+    display: none;
+  }
+  .mobile-topnav {
+    display: none;
+  }
+    #project-list {
+      position:relative;
+      display: flex;
+      top:10%;
+
+      /* padding-left: 10%; */
       /* padding-right:13.5%; */
-      width: 90%;
-      height: 65vh;
+      /* width: 90%; */
+      /* height: 65vh; */
       /* gap:10%; */
-      justify-content: space-between;
+      justify-content: space-evenly;
       flex-wrap: wrap;
       overflow-y: auto;
       overflow-x: hidden;
