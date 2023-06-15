@@ -323,7 +323,6 @@ footer {
 }
 .project-image {
   width:76vw;
-
 }
   #project-list {
     position: relative;
@@ -357,7 +356,25 @@ footer {
 
 }
   
+@media (min-width:600px) {
+  .project-image {
+    width:46vw;
+  }
+}
+@media (min-width:768px) {
+  .project {
+    width: 50%;
+    position: relative;
+    left:25%;
+  }
+  
+}
+
   @media (min-width:1413px) {
+    
+    .project-image {
+      width:26vw;
+    }
   a {
     font-family: 'Montserrat';
     font-style: normal;
@@ -391,6 +408,18 @@ footer {
       flex-wrap: wrap;
       overflow-y: auto;
       overflow-x: hidden;
+    }
+    .project {
+      left:0;
+      display: block;
+      /* align-items: center; */
+      width: 26vw;
+      height: 55vh;
+      overflow: hidden;
+      background: rgba(253, 184, 158, 0.5);
+      box-shadow: -8px 7px 15px rgba(0, 0, 0, 0.25);
+      border-radius: 20px;
+      margin-bottom: 2vh;
     }
   }
   
