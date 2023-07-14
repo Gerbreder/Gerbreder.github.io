@@ -16,6 +16,11 @@ body {
   z-index: 9999;
   flex-direction: column;
 }
+
+.lead {
+  margin-top:3em;
+}
+
 .right-side {
   z-index: 9999;
 }
