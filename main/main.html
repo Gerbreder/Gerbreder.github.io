@@ -97,8 +97,8 @@
     
         </div>
 
-        <div class="blurred-rectangle">
-            <div class="left-side">
+        <div class="blurred-rectangle" id="blurred-rectangle">
+            <div class="left-side" id="left-side">
                 <div class="navigation-bar">
                     <div class="logo">
                         <a href="main.html">
@@ -113,8 +113,8 @@
                     </div>
                     <div class="nav-buttons">
                         <nav class="nav nav-masthead">
-                            <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="main.html">Home</a>
-                            <a class="nav-link fw-bold py-1 px-0" href="../portfolio/portfolio.html">Portfolio</a>
+                            <a class="nav-link fw-bold py-1 px-0 active" aria-current="page"  onclick="expand()" href="main.html">Home</a>
+                            <a class="nav-link fw-bold py-1 px-0" onclick="expand()">Portfolio</a>
                             <a class="nav-link fw-bold py-1 px-0" href="../contacts/contacts.html">Contact Me</a>
                         </nav>
                     </div>
@@ -136,7 +136,7 @@
                     </div>
                     
                   </div>
-                <div class="content">
+                <div class="content" id="content">
                     <div class="information">
                         <h1 id="title">
                             Hi, I'm Erik Gerbreder!
@@ -145,6 +145,13 @@
                             I am a young and ambitious web developer with experience in PHP, Java, HTML, CSS, JavaScript and OpenCart. I am reliable and have a strong desire to constantly learn and grow. If you are looking for a dedicated and skilled programmer who is eager to take on new challenges, I would be a perfect fit. Let's connect and build something remarkable together!
                         </p>
                         
+                        <!-- Just an example button -->
+                        <button onclick="expand()">Expand</button>
+                        <button onclick="minimize()">Minimize</button>
+                        <button onclick="hide_photo()">Hide</button>
+                        <button onclick="show_photo()">Show</button>
+                        <!-- Just an example button -->
+
                         <p class="lead">
                             <button class="blob-btn" onclick="toPortfolio()">
                             Portfolio
@@ -174,11 +181,15 @@
                     </div>
                 </div>
             </div>
-            <div class="right-side">
-                <div class="photo">
+            <div class="right-side" id="right-side">
+                <div class="photo" id="photo">
                 </div>
             </div>
         </div>
+
+        <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+        <script src="content_component.js"></script>
         <script>
             function toPortfolio() {
                 window.location.href = "https://gerbreder.github.io/portfolio/portfolio.html";
@@ -191,6 +202,38 @@
                 x.style.display = "block";
               }
             }
+
+            function expand() {
+                let rect = document.getElementById("blurred-rectangle");
+                rect.classList.add('expand');
+                let photo = document.getElementById("photo");
+                photo.classList.add('hide');
+                let right_side = document.getElementById("right-side");
+                right_side.classList.add("minimize");
+                let content = document.getElementById("left-side");
+                content.classList.add("expand");
+            }
+
+            function minimize() {
+                let rect = document.getElementById("blurred-rectangle");
+                rect.classList.remove('expand');
+                let photo = document.getElementById("photo");
+                photo.classList.remove('hide');
+                let right_side = document.getElementById("right-side");
+                right_side.classList.remove("minimize");
+                let content = document.getElementById("left-side");
+                content.classList.remove("expand");
+            }
+
+            function hide_photo() {
+                let photo = document.getElementById("photo");
+                photo.classList.add('hide');
+            }
+            function show_photo() {
+                let photo = document.getElementById("photo");
+                photo.classList.remove('hide');
+            }
+
             </script>
 
         

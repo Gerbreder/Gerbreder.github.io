@@ -26,8 +26,8 @@ body {
 }
 .blurred-rectangle {
   backdrop-filter: blur(15px);
-  /* filter: blur(15px); */
 }
+
 .blurred-rectangle::before {
   content: '';
   position: absolute;
@@ -380,15 +380,28 @@ footer {
       overflow-y: hidden;
       overflow-x: hidden;
       border: 1.1px solid rgba(255, 255, 255, 0.521);
+      transition: all 1s ease;
     }
-  
+    .blurred-rectangle.expand {
+      left:0;
+      top:0;
+      width: 100vw;
+      height: 100vh;
+    }
     .left-side {
       width:60%;
+    }
+    
+    .left-side.expand {
+      width: 100%;
     }
     .right-side {
       display: flex;
       width: 40%;
       height: 100%;
+    }
+    .right-side.minimize {
+      width: 0%;
     }
     .navigation-bar {
       gap: 2em;
@@ -451,6 +464,10 @@ footer {
       justify-content: center; /* Выравнивание по горизонтали */
       background-size: cover; /* Масштабирование изображения для заполнения flex-элемента */
       background-position: center; /*Позиционирование изображения по центру*/
+      transition: all 1s ease;
+    }
+    .photo.hide {
+      opacity:0;
     }
     .content {
       position: relative;
