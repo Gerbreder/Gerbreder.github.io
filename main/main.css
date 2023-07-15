@@ -10,6 +10,39 @@ body {
   background: linear-gradient(238.79deg, #b0a799 1.03%, #988580 71.28%);
 }
 
+.contacts {
+  position:relative;
+  display: flex;
+  top:30%;
+  padding-left: 10%;
+  width: 90%;
+  height:25%;
+  justify-content: space-between;
+}
+.contact-method {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.contact-link {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 130%;
+      line-height: 49px;
+      text-align: center;
+      
+      text-decoration-line: underline;
+      text-transform: uppercase;
+
+      color: #FFFFFF;
+
+      text-shadow: -6px 5px 6px rgba(0, 0, 0, 0.25);
+  }
+  .contact-link:hover {
+      color: #fdb89e;
+  }
+
 .left-side {
   position: relative;
   display: flex;
